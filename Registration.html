@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="stylereg.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <form  action="" method ="get">
+            <img src="title.jpg" alt="" width="100%">
+        <!-- <h1 class="rt" style="font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; background-color: burlywood;">INSPIRA 2K24 </h1>-->
+            <h2 style="color: azure; text-align: center;">REGISTRATION FORM</h2>
+            <table border ="2" cellspacing="0.5" align="center" width="70%">
+            <tr>
+                <p style="color: beige;">  Following Table shows the Events and their dates</p>
+                <p style="color: beige;">  You can Register for one or more evnets by filling the form below</p>
+            </tr>
+
+            <tr style="color: azure; font-size: 130%; padding: 30%;">
+                <th style="width: 10%;">Sr.No</th>
+                <th style="width: 15%;">Title</th>
+                <th style="width: 22%;">Date</th>
+                <th style="width: 22%;">Entry Fees</th>
+                <th>Coordinator</th>
+
+            </tr>
+
+            <tr style="color: azure; font-size: 100%; padding: 30%;">
+                <th >1</th>
+                <th >IPL Auction</th>
+                <th >22/1/2024</th>
+                <th >Rs.200</th>
+                <th>Atharva Patil(SY ME-B)</th>
+            </tr>
+
+            <tr style="color: azure; font-size: 100%; padding: 30%;">
+                <th >2</th>
+                <th >CAD Master</th>
+                <th >22/1/2024</th>
+                <th>Rs.50</th>
+                <th>Pratik Shinde(TY CE-A)</th>
+            </tr>
+                
+            <tr style="color: azure; font-size: 100%; padding: 30%;">
+                <th >3</th>
+                <th >Shark Tank</th>
+                <th >23/1/2024</th>
+                <th>Rs.50</th>
+                <th>Sakshi Mahadik(SY AI-B)</th>
+            </tr>
+
+            <tr style="color: azure; font-size: 100%; padding: 30%;">
+                <th >4</th>
+                <th >Technical Quiz</th>
+                <th >22/1/2024</th>
+                <th>Rs.100</th>
+                <th>Pranav Pakhale(TY CS-B)</th>
+
+            </tr>
+
+            <tr style="color: azure; font-size: 100%; padding: 30%;">
+                <th >5</th>
+                <th >Circuit Debugging</th>
+                <th >24/1/2024</th>
+                <th>Rs.50</th>
+                <th>Aditi Patankar(SY EE-A)</th>
+
+            </tr>
+
+            <tr style="color: azure; font-size: 100%; padding: 30%;">
+                <th >6</th>
+                <th >JAVA Master</th>
+                <th >22/1/2024</th>
+                <th>Rs.50</th>
+                <th>Ganesh Kharat(SY CS-A)</th>
+
+            </tr>
+            </table>
+            
+            <p style="color: red;" class="ret">Required Fields are followed by *</p>
+            
+            <h3 style="color: aliceblue;">Contact Information</h3>
+
+        <p style="color: aliceblue;">Name: *<input type="text" name="name" id="name" placeholder ="Enter your Name"required></p>
+        <fieldset>
+            <legend style="color: aliceblue;">Gender *</legend>
+            <p style="color: aliceblue;">
+                Male <input type="radio" name="gender" id="Male" required>
+                Female <input type="radio" name="gender" id="Female" required>
+                Other <input type="radio" name="gender" id="Other" required>
+            </p>
+        </fieldset>
+
+        <p style="color: aliceblue;">Address: <textarea name="address" id="address" cols="90" rows="5"></textarea></p>
+
+        <p style="color: aliceblue;">Email: * <input type="email" name="email" id="email" required></p>
+
+        <p style="color: aliceblue;">Event Name: * <input type="number" name="Pincode" id="Pincode" required></p>
+        
+        <h3 style="color: aliceblue;">Payment Info</h3>
+        
+        <p style="color: aliceblue;">Name of Ac. holder: *<input type="text" name="name" id="name" required></p>
+
+        <p style="color: aliceblue;">Payment Proof: *<input type="file" name="proof" id="proof" placeholder="Upload Screenshot of payment here"></p>
+        
+        <h4 style="color: aliceblue;">Instructions for participants:- </h4>
+        <ol style="color: azure;">
+            <li>All participants should be present 10 min before given time </li>
+            <li>Bring entry ticket without fail</li>
+            <li>Refreshment will be hiven to all participants</li>
+            <li>All participants should read the rules carefully</li>
+
+        </ol>
+        <center>
+            <canvas id="myCanvas" width="250" height="70" style="border:1px solid #000000; background-color: bisque;"></canvas>
+        <!--    <img  src="Thank You.jpg" alt="" width="50%"> -->
+        </center>
+
+        <br>
+        <center>
+            <input type="submit" value="Submit" class="submit-btn">
+
+        </center>
+        </form>
+    </div>
+</body>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "50px Times New Roman";
+    ctx.fillStyle = "black";   
+    ctx.fillText("Thank You", 17, 50);
+
+</script>
+</html>
